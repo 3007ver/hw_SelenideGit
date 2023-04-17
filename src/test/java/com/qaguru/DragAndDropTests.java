@@ -12,5 +12,6 @@ public class DragAndDropTests extends TestBase {
         $("#column-a").shouldHave(text("A"));
         $("#column-a").dragAndDropTo("#column-b");
         $("#column-a").shouldHave(text("B"));
+        $("#column-b").shouldHave(text("A"));
     }
 }
